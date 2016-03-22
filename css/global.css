@@ -2672,7 +2672,7 @@ input[type="button"].btn-block {
   padding: 8px 15px;
   margin-bottom: 18px;
   list-style: none;
-  background-color: #f6f6f6;
+  
   border-radius: 0px; }
   .breadcrumb > li {
     display: inline-block; }
@@ -7140,7 +7140,7 @@ div.star a:hover {
 .breadcrumb {
   display: inline-block;
   padding: 0 11px;
-  border: 1px solid #d6d4d4;
+
   font-weight: bold;
   font-size: 12px;
   line-height: 24px;
