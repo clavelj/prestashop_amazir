@@ -150,8 +150,42 @@
 			{/if}
 		</div> <!-- end pb-left-column -->
 		<!-- end left infos-->
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		<!-- center infos -->
-		<div class="pb-center-column col-xs-12 col-sm-4">
+		<div class="pb-center-column col-xs-12 col-sm-4 bordure-produit">
 			{if $product->online_only}
 				<p class="online_only">{l s='Online only'}</p>
 			{/if}
@@ -241,8 +275,9 @@
 			{/if}
 		</div>
 		<!-- end center infos-->
+
 		<!-- pb-right-column-->
-		<div class="pb-right-column col-xs-12 col-sm-4 col-md-3">
+		<div class="pb-right-column col-xs-12 col-sm-4 col-md-3 bordure-produit">
 			{if ($product->show_price && !isset($restricted_country_mode)) || isset($groups) || $product->reference || (isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS)}
 			<!-- add to cart form-->
 			<form id="buy_block"{if $PS_CATALOG_MODE && !isset($groups) && $product->quantity > 0} class="hidden"{/if} action="{$link->getPageLink('cart')|escape:'html':'UTF-8'}" method="post">
@@ -399,7 +434,17 @@
 			{/if}
 		</div> <!-- end pb-right-column-->
 	</div> <!-- end primary_block -->
+
 	{if !$content_only}
+
+
+
+
+
+
+
+
+
 {if (isset($quantity_discounts) && count($quantity_discounts) > 0)}
 			<!-- quantity discount -->
 			<section class="page-product-box">
