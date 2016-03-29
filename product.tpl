@@ -465,11 +465,31 @@
 				</div>
 			</section>
 		{/if}
-		{if isset($features) && $features}
-			<!-- Data sheet -->
-			<section class="page-product-box">
-				<h3 class="page-product-heading">{l s='Data sheet'}</h3>
-				<table class="table-data-sheet">
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  {if isset($features) && $features}<li><a data-toggle="tab" href="#menu1">
+
+<h3 class="page-product-heading">{l s='Data sheet'}</h3>
+
+</a></li>{/if}
+
+  {if isset($product) && $product->description}<li><a data-toggle="tab" href="#menu2">
+
+<h3 class="page-product-heading">{l s='More info'}</h3>
+
+</a></li>{/if}
+</ul>
+
+
+<div class="tab-content">
+  {if isset($features) && $features}
+  <div id="menu1" class="tab-pane fade">
+   <table class="table-data-sheet">
 					{foreach from=$features item=feature}
 					<tr class="{cycle values="odd,even"}">
 						{if isset($feature.value)}
@@ -479,18 +499,41 @@
 					</tr>
 					{/foreach}
 				</table>
-			</section>
-			<!--end Data sheet -->
-		{/if}
-		{if isset($product) && $product->description}
-			<!-- More info -->
-			<section class="page-product-box">
-				<h3 class="page-product-heading">{l s='More info'}</h3>
-				<!-- full description -->
-				<div  class="rte">{$product->description}</div>
-			</section>
-			<!--end  More info -->
-		{/if}
+  </div>{/if}
+
+  {if isset($product) && $product->description}
+  <div id="menu2" class="tab-pane fade">
+   <div  class="rte">{$product->description}</div>
+  </div>{/if}
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		{if isset($packItems) && $packItems|@count > 0}
 		<section id="blockpack">
 			<h3 class="page-product-heading">{l s='Pack content'}</h3>
