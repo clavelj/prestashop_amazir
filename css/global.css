@@ -2221,8 +2221,7 @@ input[type="button"].btn-block {
     display: block; }
     .nav > li > a {
       position: relative;
-      display: block;
-      padding: 10px 15px; }
+      display: block;}
       .nav > li > a:hover, .nav > li > a:focus {
         text-decoration: none;
         background-color: #eeeeee; }
@@ -2248,17 +2247,17 @@ input[type="button"].btn-block {
   border-bottom: 1px solid #ddd; }
   .nav-tabs > li {
     float: left;
+        width: 200px;
     margin-bottom: -1px; }
     .nav-tabs > li > a {
-      margin-right: 2px;
+      margin-right: -3px;
       line-height: 1.42857;
       border: 1px solid transparent;
       border-radius: 0px 0px 0 0; }
       .nav-tabs > li > a:hover {
-        border-color: #eeeeee #eeeeee #ddd; }
+         }
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
       color: #555555;
-      background-color: #fff;
       border: 1px solid #ddd;
       border-bottom-color: transparent;
       cursor: default; }
@@ -6655,11 +6654,11 @@ h3.page-product-heading {
   font-size: 18px;
   line-height: 20px;
   padding: 14px 20px 17px;
-  margin: 0 0 20px;
+  margin: 0;
   position: relative;
   border: 1px solid #d6d4d4;
   border-bottom: none;
-  background: #fbfbfb; }
+  background: #efefef; }
 
 ul.footer_links {
   padding: 20px 0 0px 0;

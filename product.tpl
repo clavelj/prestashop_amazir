@@ -517,7 +517,7 @@
 
 
 
-<ul class="nav nav-tabs">
+<ul class="nav nav-tabs tabulation">
 
   {if isset($features) && $features}<li><a data-toggle="tab" href="#menu1">
 
