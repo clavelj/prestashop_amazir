@@ -183,7 +183,7 @@
 					</div>
 					{if (!$PS_CATALOG_MODE && $PS_STOCK_MANAGEMENT && ((isset($product.show_price) && $product.show_price) || (isset($product.available_for_order) && $product.available_for_order)))}
 						{if isset($product.available_for_order) && $product.available_for_order && !isset($restricted_country_mode)}
-							<span class="availability">
+							<!--<span class="availability">
 								{if ($product.allow_oosp || $product.quantity > 0)}
 									<span class="{if $product.quantity <= 0 && isset($product.allow_oosp) && !$product.allow_oosp} label-danger{elseif $product.quantity <= 0} label-warning{else} label-success{/if}">
 										{if $product.quantity <= 0}{if $product.allow_oosp}{if isset($product.available_later) && $product.available_later}{$product.available_later}{else}{l s='In Stock'}{/if}{else}{l s='Out of stock'}{/if}{else}{if isset($product.available_now) && $product.available_now}{$product.available_now}{else}{l s='In Stock'}{/if}{/if}
@@ -197,16 +197,16 @@
 										{l s='Out of stock'}
 									</span>
 								{/if}
-							</span>
+							</span> -->
 						{/if}
 					{/if}
 				</div>
 				{if $page_name != 'index'}
-					<div class="functional-buttons clearfix">
+					<div class="functional-buttons clearfix center-block">
 						{hook h='displayProductListFunctionalButtons' product=$product}
 						{if isset($comparator_max_item) && $comparator_max_item}
-							<div class="compare">
-								<a class="add_to_compare" href="{$product.link|escape:'html':'UTF-8'}" data-id-product="{$product.id_product}">{l s='Add to Compare'}</a>
+							<div class="compare center-block">
+								<a class="add_to_compare text-center" href="{$product.link|escape:'html':'UTF-8'}" data-id-product="{$product.id_product}">{l s='Add to Compare'}</a>
 							</div>
 						{/if}
 					</div>

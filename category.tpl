@@ -109,12 +109,7 @@
                 </div>
 			</div>
 			{include file="./product-list.tpl" products=$products}
-			<div class="content_sortPagiBar">
-				<div class="bottom-pagination-content clearfix">
-					{include file="./product-compare.tpl" paginationId='bottom'}
-                    {include file="./pagination.tpl" paginationId='bottom'}
-				</div>
-			</div>
+			
 		{/if}
 	{elseif $category->id}
 		<p class="alert alert-warning">{l s='This category is currently unavailable.'}</p>
