@@ -430,12 +430,20 @@ span.view_scroll_spacer {
 .page-product-box .rte a.btn {
   text-decoration: none; }
 
+#image-block {height: inherit;}
+
+.primary_block {
+  background-color: #efefef;
+}
+
 .bordure-produit {
-  background-color: grey;
+  background-color: #efefef;
   color:black;
   height: auto;
 }
 
+.socialsharing_product {
+  background-color: #efefef;}
 
 
 
@@ -725,7 +733,7 @@ table.table-product-discounts {
 
 #availability_value,
 #last_quantities {
-  color: #fff;
+  color: black;
   font-weight: 700;
   line-height: 18px;
   display: inline-block;

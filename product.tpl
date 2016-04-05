@@ -39,7 +39,6 @@
 	<div class="primary_block row">
 		{if !$content_only}
 			<div class="container">
-				<div class="top-hr"></div>
 			</div>
 		{/if}
 		{if isset($adminActionDisplay) && $adminActionDisplay}
@@ -183,7 +182,7 @@
 
 
 
-
+<div id="information-produit">
 		<!-- center infos -->
 		<div class="pb-center-column col-xs-12 col-sm-4 bordure-produit">
 			{if $product->online_only}
@@ -433,7 +432,7 @@
 			{/if}
 		</div> <!-- end pb-right-column-->
 
-
+</div>
 		
 			{if isset($HOOK_EXTRA_RIGHT) && $HOOK_EXTRA_RIGHT}{$HOOK_EXTRA_RIGHT}{/if}
 	</div> <!-- end primary_block -->
