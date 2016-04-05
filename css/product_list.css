@@ -160,12 +160,14 @@ ul.product_list.grid > li {
   ul.product_list.grid > li .product-container {
     background: #fff;
     padding: 0;
-    position: relative; }
+    position: relative;
+    width: 80%; }
     ul.product_list.grid > li .product-container .product-image-container {
-      border: 1px solid #d6d4d4;
+      background-color: #efefef;
       padding: 9px;
       margin-bottom: 13px;
-      position: relative; }
+      position: relative;
+       }
       @media (max-width: 767px) {
         ul.product_list.grid > li .product-container .product-image-container {
           margin-left: auto;
@@ -224,7 +226,7 @@ ul.product_list.grid > li {
         margin-bottom: 5px }
   @media (min-width: 1200px) {
     ul.product_list.grid > li.hovered .product-container {
-      
+
       position: relative;
       z-index: 10; }
       ul.product_list.grid > li.hovered .product-container .content_price {
